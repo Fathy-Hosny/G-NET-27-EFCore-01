@@ -12,6 +12,9 @@ namespace ReadMore_Books_EFCore_Assignment_1
             optionsBuilder
                 .UseSqlServer("Server=.;Database=EfCore_BOOKSTORE;Trusted_Connection=True; trustServerCertificate=True;");
         }
-
+        public DbSet<Category> Categories { get; set; }
+        public DbSet <Author> Authors { get; set; }
+         public DbSet<Book> Books { get; set; }
+        public DbSet<BookAuthor> BookAuthors { get; set; }
     }
 }
